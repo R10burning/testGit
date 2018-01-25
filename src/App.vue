@@ -33,6 +33,7 @@ export default {
 svg{
     fill:#fff;
 }
+/* aaa */
 .fa-pulse {
     animation: fa-spin 1s infinite steps(8);
 }
