@@ -1,0 +1,31 @@
+{
+	"currentServer1":
+	{
+		"rootUrl": "http://172.16.110.41:8080/testapi",
+		"jgid":"70",
+		"imgUrl": "http://172.16.110.41:8080/testapi",
+		"htmlUrl": "http://172.16.110.41:8080/htmldata",
+		"indexTitle": "健康金牛",
+		"searchAdress": "金牛社区卫生服务中心"
+	},
+	"currentServer":
+	{
+		"rootUrl": "http://mobile.wonderscd.com/jnhisapi",
+		"jgid":"1",
+		"cookieName":"jn_1",
+		"imgUrl": "http://mobile.wonderscd.com/jnhisapi",
+		"htmlUrl": "http://mobile.wonderscd.com/jnhtmldata",
+		"printUrl": "http://172.20.10.11:7080/app/webs",
+		"getPageDomUrl": "http://jn.jw028.cn:7080/hisapi",
+		"indexTitle": "健康金牛",
+		"searchAdress":"金牛区卫生和计划生育委员会"
+	},
+	"currentPayServer":
+	{
+		"sendWxMsg": "http://mobile.wonderscd.com/jnhisapi/rest/h5paymsg",
+		"baseUrl": "http://mobile.wonderscd.com/jnhisapi/rest/h5pay",
+		"getInfo": "http://mobile.wonderscd.com/jnhisapi/rest/"
+	},
+	"devMode":"false",
+	"version":"1"
+}

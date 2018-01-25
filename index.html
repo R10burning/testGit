@@ -1,0 +1,61 @@
+<script>
+  (function(){
+	var width = 375, pw = parseInt(window.screen.width), scale = pw / width, ua = navigator.userAgent;
+  console.log(width,scale)
+  if(/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version > 2.3){
+			document.write('<meta name="viewport" content="width=' + width + ',minimum-scale=' + scale + ',maximum-scale=' + scale + ',target-densitydpi=device-dpi" />');
+		}else{
+			document.write('<meta name="viewport" content="width=' + width + ',target-densitydpi=device-dpi" />');
+		}
+	}else{
+		document.write('<meta name="viewport" content="width=' + width + ',user-scalable=no,target-densitydpi=device-dpi" />');
+	}
+})();
+</script>
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+  <meta charset="utf-8">
+  <!-- plus meta -->
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+  <title>健康金牛</title>
+  <script src="./static/js/vendor.dll.js"></script>
+</head>
+<style type="text/css">
+.mask {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: rgba(123, 123, 123, 0.6);
+  z-index: 999;
+  top: 0px;
+  /*display: none;*/
+}
+
+html {
+  overflow: auto;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+}
+
+</style>
+
+<body class="window">
+  <div id="mask" class="mask"></div>
+  <div class="page" id="app">
+  </div>
+</body>
+<!-- plus js -->
+
+</html>
